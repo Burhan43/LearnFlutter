@@ -15,43 +15,133 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("Beginner App"),
+          backgroundColor: Colors.greenAccent,
         ),
-        body: Center(
-          child: Container(
-            padding: const EdgeInsets.all(8),
+
+        // body: Container(
+        //
+        //   color: Colors.cyanAccent,
+        //
+        //   width: MediaQuery.of(context).size.width,
+        //   height: MediaQuery.of(context).size.height,
+        //   // height: MediaQuery.of(context).size.height/2,
+        //   child: Row(
+        //     // mainAxisAlignment: MainAxisAlignment.center,
+        //     // crossAxisAlignment: CrossAxisAlignment.stretch,
+        //     crossAxisAlignment: CrossAxisAlignment.center,
+        //     // crossAxisAlignment: CrossAxisAlignment.start,
+        //     // mainAxisAlignment: MainAxisAlignment.end,
+        //     // mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //     // mainAxisAlignment: MainAxisAlignment.start,
+        //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //     children: [
+        //       Container(
+        //         padding: const EdgeInsets.all(8),
+        //         width: 100,
+        //         height: 100,
+        //         color: Colors.deepOrangeAccent,
+        //       ),
+        //       Container(
+        //         padding: const EdgeInsets.all(8),
+        //         width: 100,
+        //         height: 100,
+        //         color: Colors.teal,
+        //       ),
+        //       Container(
+        //         padding: const EdgeInsets.all(8),
+        //         width: 100,
+        //         height: 100,
+        //         color: Colors.amberAccent,
+        //       ),
+        //     ],
+        //   ),
+        // ));
+        // body: Padding(
+        //   padding: const EdgeInsets.all(8.0),
+        //   child: Container(
+        //
+        //     color: Colors.cyanAccent,
+        //
+        //     width: MediaQuery.of(context).size.width,
+        //     height: MediaQuery.of(context).size.height,
+        //     // height: MediaQuery.of(context).size.height/2,
+        //     child: Column(
+        //       // mainAxisAlignment: MainAxisAlignment.center,
+        //       // crossAxisAlignment: CrossAxisAlignment.stretch,
+        //       crossAxisAlignment: CrossAxisAlignment.center,
+        //       // crossAxisAlignment: CrossAxisAlignment.start,
+        //       // mainAxisAlignment: MainAxisAlignment.end,
+        //       // mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //       mainAxisAlignment: MainAxisAlignment.start,
+        //       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //       children: [
+        //         Container(
+        //           padding: const EdgeInsets.all(8),
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.deepOrangeAccent,
+        //         ),
+        //         Container(
+        //           padding: const EdgeInsets.all(8),
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.teal,
+        //         ),
+        //         Container(
+        //           padding: const EdgeInsets.all(8),
+        //           width: 100,
+        //           height: 100,
+        //           color: Colors.amberAccent,
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // ));
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Align(
             alignment: Alignment.center,
-            // color: Colors.teal,  // no color if using decoration
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-                color: Colors.teal,
-                // borderRadius: BorderRadiusDirectional.all(Radius.circular(50)),
+            child: Container(
 
-                // shape: BoxShape.circle,
+              color: Colors.cyanAccent,
 
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: [
-                  BoxShadow(color: Colors.grey, blurRadius: 5,
-                      // spreadRadius: 5
-                    offset: Offset(2.0,10.0)
-                  )
+              width: 200,
+              height: 300,
+              // height: MediaQuery.of(context).size.height/2,
+              child: Column(
+                // mainAxisAlignment: MainAxisAlignment.center,
+                // crossAxisAlignment: CrossAxisAlignment.stretch,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                // crossAxisAlignment: CrossAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.end,
+                // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    width: 100,
+                    height: 100,
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    width: 100,
+                    height: 100,
+                    color: Colors.teal,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    width: 100,
+                    height: 100,
+                    color: Colors.amberAccent,
+                  ),
                 ],
-                gradient:
-                    LinearGradient(colors: [Colors.yellowAccent, Colors.pink])),
-            // if using decoration no color property will use out of decoration
-            child: Text(
-
-                "Box",
-
-                textAlign:TextAlign.center,
-                style: TextStyle(
-
-              color: Colors.white,
-              fontSize: 30.0,
-              fontStyle: FontStyle.italic,
-
-              fontWeight: FontWeight.bold
-            ),),
+              ),
+            ),
           ),
         ));
   }
